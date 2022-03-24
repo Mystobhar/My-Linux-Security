@@ -1,4 +1,7 @@
 #!/bin/bash
+
+#Clamscan is a cli AV for linux based systems. This AV's databases need to initialised before every scan which is automated down below.
+
 echo "Restarting and refreshing the database"
 sudo systemctl stop clamav-freshclam    #stops the clamscan service
 sudo freshclam				#updates the clam database
